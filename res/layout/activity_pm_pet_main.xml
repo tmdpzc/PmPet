@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_activity"
+    tools:context=".ui.PmPetMainActivity" >
+
+    <com.pm.commons.widget.FrameAnimaView
+        android:id="@+id/iv_pet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/frame_animations"
+        android:clickable="false" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical" >
+
+            <ImageButton
+                android:id="@+id/bt_social"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:background="@android:color/transparent"
+                android:onClick="onClick_Social"
+                android:src="@drawable/ic_social_button" />
+
+            <ImageButton
+                android:id="@+id/bt_map"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/bt_social"
+                android:background="@android:color/transparent"
+                android:onClick="onClick_Map"
+                android:src="@drawable/ic_map_button" />
+
+            <TextView
+                android:id="@+id/tv_pm_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:text="北京"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp" >
+
+            <include layout="@layout/freg_pm_info__pm_main" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/gif_pet"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:enabled="false" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/bt_pet_eat"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:onClick="onClick_Control"
+                android:src="@drawable/ic_pet_eat" />
+
+            <ImageButton
+                android:id="@+id/bt_pet_collect"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:onClick="onClick_Control"
+                android:src="@drawable/ic_pet_collect" />
+        </LinearLayout>
+
+        <Button
+            style="@style/FriendsMiddleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_toast"
+            android:gravity="center"
+            android:onClick="onClick_WebInfo"
+            android:text="PM2.5为什么会对小孩子造成伤害" />
+    </LinearLayout>
+
+</RelativeLayout>

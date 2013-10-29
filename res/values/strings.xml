@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PmPet</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_pm_pet_main">PmPetMainActivity</string>
+    <string name="title_activity_social_circle">SocialCircleActivity</string>
+    <string name="weibo_subject">召集令</string>
+    <string name="weibo_text">这里空气好，来这玩吧</string>
+    <string name="title_activity_friends_detail">FriendsDetailActivity</string>
+    <string name="network_unavaiable_tips">网络不通</string>
+    <string name="title_activity_web_info">WebInfoActivity</string>
+    <string name="toast_info_update_pm_info_failed">refesh failed.</string>
+
+</resources>

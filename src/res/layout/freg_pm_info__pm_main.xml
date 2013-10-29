@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/tv_pm_index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="64"
+        android:textColor="@android:color/white"
+        android:textSize="60sp" />
+
+    <TextView
+        android:id="@+id/tv_pm_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_pm_index"
+        android:layout_alignBottom="@+id/tv_pm_index"
+        android:layout_toRightOf="@+id/tv_pm_index"
+        android:text="PM2.5"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/v_split_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/tv_pm_index"
+        android:layout_marginTop="2dp"
+        android:background="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tv_healthy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v_split_line"
+        android:layout_marginTop="2dp"
+        android:text="健康。轻度污染"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/v_split_line2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/tv_healthy"
+        android:layout_marginTop="2dp"
+        android:background="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v_split_line2"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/MainSmallTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="CO/1H" />
+
+            <TextView
+                style="@style/MainSmallTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="MO/1H" />
+
+            <TextView
+                style="@style/MainSmallTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="O2/1H" />
+
+            <TextView
+                style="@style/MainSmallTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="SO/1H" />
+
+            <TextView
+                style="@style/MainSmallTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="O3/1H" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_pm_detail1"
+                style="@style/MainSmallTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0.65" />
+
+            <TextView
+                android:id="@+id/tv_pm_detail2"
+                style="@style/MainSmallTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="13" />
+
+            <TextView
+                android:id="@+id/tv_pm_detail3"
+                style="@style/MainSmallTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="130" />
+
+            <TextView
+                android:id="@+id/tv_pm_detail4"
+                style="@style/MainSmallTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="54" />
+
+            <TextView
+                android:id="@+id/tv_pm_detail5"
+                style="@style/MainSmallTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="6" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

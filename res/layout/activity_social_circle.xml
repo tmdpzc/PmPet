@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_activity"
+    tools:context=".ui.SocialCircleActivity" >
+
+    <RelativeLayout
+        android:id="@+id/rl_title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="top"
+        android:background="@color/half_wihte" >
+
+        <ImageButton
+            android:id="@+id/bt_back"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:onClick="onBackButtonClicked"
+            android:src="@drawable/ic_back_button" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_friends"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rl_title_bar" >
+    </ListView>
+
+</RelativeLayout>

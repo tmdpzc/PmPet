@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_activity"
+    tools:context=".ui.FriendsDetailActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_head_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/bg_friend_big"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_friend_big" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/FriendsMiddleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小妈妈" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            style="@style/FriendsSmallTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2013.9.8" />
+
+        <TextView
+            android:id="@+id/tv_info"
+            style="@style/FriendsMiddleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="做一个好妈妈要时刻\n了解PM2.5" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+        <Button
+            style="@style/FriendsMiddleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_toast"
+            android:gravity="center"
+            android:onClick="onClick_Swap"
+            android:text="交换PM2.5宠物" />
+    </LinearLayout>
+
+</RelativeLayout>
